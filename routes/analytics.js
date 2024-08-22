@@ -1,6 +1,7 @@
 const router = require('express').Router();
 const controller = require('../controllers/analytics');
 
+// Routes
 router.post('/analytics', controller.createEvents);
 router.get('/analytics', controller.getAllEvents);
 router.delete('/analytics/:id', controller.notAllowed);
